@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- For the CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Fighting Game</title>
+  </head>
+  <body>
+    <div class="gameHeading">
+        <h2>Kenzie vs Samurai Mack</h2>
+        <p>'w','a','s','d' to Control and Space for attack for player on the left 
+            and 'i','j','l' to Control player on the right and press 'k' for attacking</p>
+    </div>
+    <div class="overall">
+      <div class="healthBars">
+        <!-- player healthbar -->
+        <div class="health" id="leftPlayerHealth">
+          <div id="player1Health" class="playerHealth"></div>
+        </div>
+        <!-- Timer -->
+        <div class="timer">10</div>
+        <!-- Enemy Health Bar -->
+        <div class="health">
+          <div id="player2Health" class="playerHealth"></div>
+        </div>
+      </div>
+      <div id="message">Time's up!</div>
+      <canvas class="canvaElement"></canvas>
+    </div>
+    <div class="credits">
+        <p>Made by Suraj Singh by following along <a href="https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA">Chris Courses</a> 
+            on Youtube</p>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
